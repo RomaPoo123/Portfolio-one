@@ -78,7 +78,6 @@ const SocialLink = styled.a`
         color: ${theme.colors.primaryBg};
         transform: translateY(-4px);
     }
-
 `
 const Copyright = styled.small`
     font-weight: 400;

@@ -7,5 +7,10 @@ export const theme = {
         font: "#ffffff",
         placeholdeColor: "#495057",
         borderColor: "#4A4A4A"
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
 }
