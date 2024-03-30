@@ -36,5 +36,7 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-
+        ${FlexWrapper} {
+                gap: 10px;
+        }
 `

@@ -42,7 +42,9 @@ const MainTitle = styled.h1`
 const FotoWrapper = styled.div`
     position: relative;
     z-index: 1;
-    margin-top: 65px;
+    
+    
+
     &::before {
         content: "";
         width: 360px;
@@ -59,6 +61,10 @@ const FotoWrapper = styled.div`
             top: -17px;
             left: 20px;
         }
+    }
+
+    @media ${theme.media.mobile} {
+        margin-top: 65px;
     }
 `
 
