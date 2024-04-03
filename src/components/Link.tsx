@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { theme } from "../styles/Theme";
 
-export const Link = styled.a`
+export const Link = styled.a<{active?: boolean}>`
 font-weight: 400;
 font-size: 14px;
 letter-spacing: 1px;
@@ -19,14 +19,20 @@ z-index: 0;
 &::before {
     content: "";
     display: inline-block;
-    
+    height: 0;
     background-color: ${theme.colors.accent};
+    border-radius: 5%;
 
     position: absolute;
     bottom: 5px;
     left: 0;
     right: 0;
     z-index: -1;
+    transition: ${theme.animations.transition};
     
+
+    ${props => props.active && css<{active?: boolean}>`
+        height: 10px;
+    `}
 }
 `

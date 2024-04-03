@@ -20,7 +20,7 @@ return (
         <S.Description>
             <S.Title>{props.title}</S.Title>
             <S.Text>{props.text}</S.Text>
-            <Link href="#">dome</Link>
+            <Link active href="#">dome</Link>
             <Link href="#">code</Link>
         </S.Description>
     </S.Work>

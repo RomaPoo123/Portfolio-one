@@ -1,14 +1,14 @@
 import React from "react";
-import styled from "styled-components";
 import { Icon } from "../icon/Icon";
+import { animateScroll as scroll} from "react-scroll";
 
 
 
 
 export const Logo:React.FC =() => {
     return (
-<a href="#">
-<Icon iconId={"css"}/>
+<a href="#" onClick={()=>{scroll.scrollToTop()}}>
+<Icon iconId={"react"}/>
 </a>
 
     );

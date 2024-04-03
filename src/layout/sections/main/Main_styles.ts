@@ -2,23 +2,26 @@ import styled from "styled-components"
 import { font } from "../../../styles/Common"
 import { theme } from "../../../styles/Theme"
 
-const StyledMain  = styled.section`
+const Main  = styled.section`
     min-height: 80vh;
     background-color: #fff5e7;
     display: flex;
 
 `
 const MainTitle = styled.h1`
-    ${font({weight:400, Fmax:27, Fmin:20})}
+    ${font({weight:400, Fmax:27, Fmin:20})};
+    p {
+        display: none;
+    }
 
 `
 const FotoWrapper = styled.div`
     position: relative;
     z-index: 1;
-    
+    margin-top: 40px;
     
 
-    &::before {
+    /* &::before {
         content: "";
         width: 360px;
         height: 470px;
@@ -35,20 +38,21 @@ const FotoWrapper = styled.div`
             left: 20px;
         }
     }
-
+*/
     @media ${theme.media.mobile} {
         margin-top: 65px;
-    }
+    } 
 `
 const Photo = styled.img`
     width: 350px;
     height: 430px;
-    object-fit: cover;
-    margin-right: 20px;
+    object-fit: contain;
+    
 
     @media ${theme.media.mobile} {
         width: 310px;
         height: 380px;
+        
     }
 `
 const Name = styled.h2`
@@ -57,6 +61,7 @@ ${font({family: "'Josefin Sans', sans-serif", weight:700, Fmax:50, Fmin:36})}
     margin: 10px 0;
 
     span {
+        font-family: 'NESUKA', sans-serif;
         position: relative;
         z-index: 0;
         white-space: nowrap;
@@ -82,7 +87,7 @@ const SmallText = styled.p`
 `
 
 export const S = {
-    StyledMain,
+    Main,
     MainTitle,
     FotoWrapper,
     Photo,
