@@ -1,15 +1,24 @@
 import styled from "styled-components"
 import { theme } from "../../../styles/Theme"
 import { FlexWrapper } from "../../../components/FlexWrapper"
+import kartinka from "./../../../assets/images/Samurai.png"
+import borderSac from "./../../../assets/images/pink-sakura-frame-png.png"
+
 
 // Skills
 const Skills = styled.section`
+    position: relative;
+    background-image: url(${kartinka});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 200px bottom 0px;
+
         ${FlexWrapper} {
                 gap: 10px;
         }
 `
-// Skill
 
+// Skill
 const Skill = styled.div`
     width: 330px;
     flex-grow: 1;
@@ -30,20 +39,24 @@ const SkillText = styled.p`
     line-height: 1.4;
 `
 export const IconWrapper= styled.div`
-    position: relative;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     &::before {
         content: "";
         display: inline-block;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         background: rgb(255, 255, 255, 0.1);
         transform: rotate(45deg) translate(-50%, -50%);
         position: absolute;
         left: 50%;
         top:50%;
         transform-origin: top left;
-    }
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
 `
 
 export const S = {

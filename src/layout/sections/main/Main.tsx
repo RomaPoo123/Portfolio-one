@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../../assets/images/111.png"
+import photo from "../../../assets/images/photo.png"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import Typewriter from 'typewriter-effect';
@@ -38,6 +38,7 @@ export const Main: React.FC = ()=>{
                                     transitionSpeed={1800}
                                     scale={1.1}
                                     gyroscope={true}>
+                                        <div className='inner-element1' ></div>
                             <S.Photo src={photo} className="inner-element" alt="pic"/>
                             </Tilt>
                         </S.FotoWrapper>

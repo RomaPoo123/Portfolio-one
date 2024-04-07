@@ -15,7 +15,7 @@ import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 function App() {
     return (
         <div className="App">
-            {/* <Particle/> */}
+            <Particle/>
             <Header />
             <Main/>
             <Skills/>

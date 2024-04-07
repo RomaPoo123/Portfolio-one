@@ -1,8 +1,15 @@
 import styled from "styled-components"
 import { theme } from "../../../styles/Theme"
+import img from "./../../../assets/images/ContactImg1.png"
+import { Container } from "../../../components/Container"
 
 const Contacts = styled.section`
+    position: relative;
     
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0px;
+    background-size: cover;
 `
 const Form = styled.form`
     max-width: 540px;

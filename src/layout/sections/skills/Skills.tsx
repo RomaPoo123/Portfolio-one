@@ -44,13 +44,13 @@ export const Skills = () => {
                 <S.Skills id={"skills"}>
                         <Container>
                                 <SectionTitle>My Skills</SectionTitle>
-                                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                                         <Fade cascade={true} damping={0.2}>
-                                                {skillData.map((s, index)=>{
-                                                        return <Skill key={index} iconId={s.iconId} title={s.title} description={s.description}/>
-                                                })}
+                                                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                                                        {skillData.map((s, index)=>{
+                                                                return <Skill key={index} iconId={s.iconId} title={s.title} description={s.description}/>
+                                                        })}
+                                                </FlexWrapper>
                                         </Fade>
-                                </FlexWrapper>
                         </Container>
                 </S.Skills>
         )

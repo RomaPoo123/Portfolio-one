@@ -1,12 +1,16 @@
 import styled from "styled-components"
 import { font } from "../../../styles/Common"
 import { theme } from "../../../styles/Theme"
+import img from "./../../../assets/images/Sakura-PNG-Image-Background.png"
 
 const Main  = styled.section`
-    min-height: 80vh;
+    min-height: 90vh;
     background-color: #fff5e7;
     display: flex;
-
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left 0px top 0;
 `
 const MainTitle = styled.h1`
     ${font({weight:400, Fmax:27, Fmin:20})};
@@ -47,6 +51,8 @@ const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: contain;
+    position: relative;
+    z-index: 3;
     
 
     @media ${theme.media.mobile} {
